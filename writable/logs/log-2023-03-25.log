@@ -1,0 +1,286 @@
+ERROR - 2023-03-25 08:41:14 --> Error connecting to the database: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+CRITICAL - 2023-03-25 08:41:14 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+#0 C:\xampp\htdocs\sistemaventas\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\sistemaventas\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\sistemaventas\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\sistemaventas\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\xampp\htdocs\sistemaventas\app\ThirdParty\codeigniter4-authentication\src\Traits\UserProviderTrait.php(60): CodeIgniter\BaseModel->first()
+#5 C:\xampp\htdocs\sistemaventas\app\ThirdParty\codeigniter4-authentication\src\Adapters\SessionAdapter.php(101): App\Models\UserModel->findByCredentials(Array)
+#6 C:\xampp\htdocs\sistemaventas\app\ThirdParty\codeigniter4-authentication\src\AuthManager.php(339): Fluent\Auth\Adapters\SessionAdapter->attempt(Array, false)
+#7 C:\xampp\htdocs\sistemaventas\app\ThirdParty\codeigniter4-authentication\src\Facades\Auth.php(58): Fluent\Auth\AuthManager->__call('attempt', Array)
+#8 C:\xampp\htdocs\sistemaventas\app\Controllers\Auth\AuthenticatedSessionController.php(73): Fluent\Auth\Facades\Auth::__callStatic('attempt', Array)
+#9 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Auth\AuthenticatedSessionController->create()
+#10 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\AuthenticatedSessionController))
+#11 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+ERROR - 2023-03-25 21:05:10 --> Error connecting to the database: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+CRITICAL - 2023-03-25 21:05:10 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+#0 C:\xampp\htdocs\sistemaventas\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\sistemaventas\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\sistemaventas\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\sistemaventas\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\xampp\htdocs\sistemaventas\app\ThirdParty\codeigniter4-authentication\src\Traits\UserProviderTrait.php(60): CodeIgniter\BaseModel->first()
+#5 C:\xampp\htdocs\sistemaventas\app\ThirdParty\codeigniter4-authentication\src\Adapters\SessionAdapter.php(101): App\Models\UserModel->findByCredentials(Array)
+#6 C:\xampp\htdocs\sistemaventas\app\ThirdParty\codeigniter4-authentication\src\AuthManager.php(339): Fluent\Auth\Adapters\SessionAdapter->attempt(Array, false)
+#7 C:\xampp\htdocs\sistemaventas\app\ThirdParty\codeigniter4-authentication\src\Facades\Auth.php(58): Fluent\Auth\AuthManager->__call('attempt', Array)
+#8 C:\xampp\htdocs\sistemaventas\app\Controllers\Auth\AuthenticatedSessionController.php(73): Fluent\Auth\Facades\Auth::__callStatic('attempt', Array)
+#9 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Auth\AuthenticatedSessionController->create()
+#10 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\AuthenticatedSessionController))
+#11 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+ERROR - 2023-03-25 21:16:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6, 7) VALUES (:0:, :1:, :2:, :3:, :4:, :5:, :6:, :7:)' at line 1
+ERROR - 2023-03-25 21:24:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6, 7) VALUES (:0:, :1:, :2:, :3:, :4:, :5:, :6:, :7:)' at line 1
+ERROR - 2023-03-25 21:26:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6, 7) VALUES (:0:, :1:, :2:, :3:, :4:, :5:, :6:, :7:)' at line 1
+CRITICAL - 2023-03-25 22:26:21 --> Call to a member function getName() on null
+#0 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Charge_excel->categoriaImport()
+#1 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Charge_excel))
+#2 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2023-03-25 22:36:18 --> Call to a member function getName() on null
+#0 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Charge_excel->categoriaImport()
+#1 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Charge_excel))
+#2 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2023-03-25 22:36:37 --> Call to a member function getName() on null
+#0 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Charge_excel->categoriaImport()
+#1 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Charge_excel))
+#2 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2023-03-25 22:36:40 --> Call to a member function getName() on null
+#0 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Charge_excel->categoriaImport()
+#1 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Charge_excel))
+#2 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2023-03-25 22:37:12 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\sistemaventas\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\sistemaventas\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\sistemaventas\app\Controllers\Charge_excel.php(183): CodeIgniter\Model->__call('insertValue', Array)
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Charge_excel->categoriaImport()
+#4 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Charge_excel))
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+ERROR - 2023-03-25 22:39:56 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:39:56 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:39:56 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:39:56 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:39:56 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:39:56 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:41:30 --> Duplicate entry 'CategoriaNew1' for key 'name'
+ERROR - 2023-03-25 22:41:30 --> Duplicate entry 'CategoriaNew2' for key 'name'
+ERROR - 2023-03-25 22:41:30 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:41:30 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:41:30 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:41:30 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:41:30 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:41:30 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:43:48 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:43:48 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:43:48 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:43:48 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:43:48 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:43:48 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:51:55 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:51:55 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:51:55 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:51:55 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:51:55 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:51:55 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:53:52 --> Table 'salessystem.mytable' doesn't exist
+ERROR - 2023-03-25 22:53:52 --> Table 'salessystem.mytable' doesn't exist
+ERROR - 2023-03-25 22:53:52 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:53:52 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:53:52 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:53:52 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:53:52 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:53:52 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:55:58 --> Table 'salessystem.mytable' doesn't exist
+ERROR - 2023-03-25 22:55:58 --> Table 'salessystem.mytable' doesn't exist
+ERROR - 2023-03-25 22:55:58 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:55:58 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:55:58 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:55:58 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:55:58 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:55:58 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:58:22 --> Duplicate entry 'CategoriaNewTESTupdate' for key 'name'
+ERROR - 2023-03-25 22:58:22 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:58:22 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:58:22 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:58:22 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:58:22 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:58:22 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:59:48 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:59:48 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:59:48 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:59:48 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:59:48 --> Column 'name' cannot be null
+ERROR - 2023-03-25 22:59:48 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:01:08 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:01:08 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:01:08 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:01:08 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:01:08 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:01:08 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:04:54 --> Duplicate entry 'CategoriaNEW1' for key 'name'
+ERROR - 2023-03-25 23:04:54 --> Duplicate entry 'CategoriaNEW2' for key 'name'
+ERROR - 2023-03-25 23:04:54 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:04:54 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:04:55 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:04:55 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:04:55 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:04:55 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:06:10 --> Duplicate entry 'CategoriaNEW1' for key 'name'
+ERROR - 2023-03-25 23:06:10 --> Duplicate entry 'CategoriaNEW2' for key 'name'
+ERROR - 2023-03-25 23:06:10 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:06:10 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:06:10 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:06:10 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:06:10 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:06:10 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:07:46 --> Duplicate entry 'CategoriaNEW1' for key 'name'
+ERROR - 2023-03-25 23:07:46 --> Duplicate entry 'CategoriaNEW2' for key 'name'
+ERROR - 2023-03-25 23:07:46 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:07:46 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:07:46 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:07:46 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:07:46 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:07:46 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:09:56 --> Duplicate entry 'CategoriaNEW1' for key 'name'
+ERROR - 2023-03-25 23:09:56 --> Duplicate entry 'CategoriaNEW2' for key 'name'
+ERROR - 2023-03-25 23:09:56 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:09:56 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:09:56 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:09:56 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:09:56 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:09:56 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:11:29 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:11:29 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:11:29 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:11:29 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:11:29 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:11:29 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:13:11 --> Duplicate entry 'CategoriaUPDATE' for key 'name'
+ERROR - 2023-03-25 23:13:11 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:13:12 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:13:12 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:13:12 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:13:12 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:13:12 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:17:53 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:17:53 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:17:53 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:17:53 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:17:53 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:17:53 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:19:12 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:19:12 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:19:12 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:19:12 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:19:12 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:19:12 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:23:52 --> Duplicate entry 'CategoriaALERTA' for key 'name'
+ERROR - 2023-03-25 23:23:52 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:23:52 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:23:52 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:23:52 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:23:52 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:23:52 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:28:36 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:28:36 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:28:36 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:28:36 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:28:36 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:28:36 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:38:21 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:38:21 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:38:21 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:38:21 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:38:21 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:38:21 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:40:29 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:40:29 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:40:29 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:40:29 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:40:29 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:40:29 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:40:55 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:40:55 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:40:55 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:40:55 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:40:55 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:40:55 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:41:42 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:41:42 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:41:42 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:41:42 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:41:42 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:41:42 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:42:18 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:42:18 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:42:18 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:42:18 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:42:18 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:42:18 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:42:40 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:42:40 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:42:40 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:42:40 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:42:40 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:42:40 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:43:02 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:43:02 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:43:03 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:43:03 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:43:03 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:43:03 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:48:28 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:48:28 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:48:28 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:48:28 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:48:28 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:48:28 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:49:17 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:49:17 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:49:17 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:49:17 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:49:17 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:49:17 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:50:34 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:50:34 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:50:34 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:50:34 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:50:34 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:50:34 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:51:03 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:51:03 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:51:03 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:51:03 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:51:03 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:51:03 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:52:38 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:52:38 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:52:38 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:52:38 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:52:38 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:52:38 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:58:41 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:58:41 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:58:41 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:58:41 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:58:41 --> Column 'name' cannot be null
+ERROR - 2023-03-25 23:58:41 --> Column 'name' cannot be null
