@@ -4,6 +4,10 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 use App\Models\CategoryModel;
 
+// REPORTE
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
+
 class Category extends Controller
 {
 	/**
@@ -93,4 +97,39 @@ class Category extends Controller
 		
 		echo json_encode($response);
 	}
+
+		// ESTO ES PARA DESCARGAR LA TABLA | REPORTE EN EXCEL
+    public function downloadCategory()
+    {
+        $model = new CategoryModel();
+        $spreadsheet = new Spreadsheet();
+        $result = $model->selectCategory();
+
+        $sheet = $spreadsheet->getActiveSheet();
+
+        $sheet->setCellValue("A1", "Categoria");
+        $sheet->setCellValue("B1", "Descripcion");
+        // $sheet->setCellValue("C1", "email");
+        // $sheet->setCellValue("D1", "address");
+        // $sheet->setCellValue("E1", "postalZip");
+        // $sheet->setCellValue("F1", "region");
+        // $sheet->setCellValue("G1", "country");
+        $sheet->setCellValue("C1", "id");
+        $count = 2;
+
+        foreach ($result as $row) {
+            $sheet->setCellValue("A" . $count, $row->name);
+            $sheet->setCellValue("B" . $count, $row->description);
+            // $sheet->setCellValue("C" . $count, $row->email);
+            // $sheet->setCellValue("D" . $count, $row->address);
+            // $sheet->setCellValue("E" . $count, $row->postalZip);
+            // $sheet->setCellValue("F" . $count, $row->region);
+            // $sheet->setCellValue("G" . $count, $row->country);
+            $sheet->setCellValue("C" . $count, $row->id);
+            $count++;
+        }
+        $writer = new Xlsx($spreadsheet);
+        $writer->save("data.xlsx");
+        return $this->response->download("data.xlsx", null)->setFileName("Categoria.xlsx");
+    }
 }

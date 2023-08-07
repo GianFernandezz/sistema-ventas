@@ -1,5 +1,5 @@
 <body class="g-sidenav-show bg-gray-100 prt">
-	<div class="min-height-300 bg-secondary position-absolute w-100 prt"></div>
+	<div class="min-height-300 bg-info position-absolute w-100 prt"></div>
 	<aside class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4" id="sidenav-main">
 		<div class="sidenav-scrollbar">
 			<div class="sidenav-header">
@@ -14,7 +14,7 @@
 					<li class="nav-item">
 						<a class="nav-link active" href="<?= base_url('dashboard');?>" :class="dashboardClass">
 							<div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-								<i class="ni ni-tv-2 text-success text-sm opacity-10"></i>
+								<i class="ni ni-tv-2 text-info text-sm opacity-10"></i>
 							</div>
 							<span class="nav-link-text ms-1">Dashboard</span>
 						</a>
@@ -22,7 +22,7 @@
 					<li class="nav-item">
 						<a data-bs-toggle="collapse" href="#store" class="nav-link" aria-expanded="false">
 							<div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
-								<i class="fa-solid fa-box text-dark text-sm"></i>
+								<i class="fa-solid fa-people-carry-box text-info text-sm"></i>
 							</div>
 							<span class="nav-link-text ms-2">Almacen</span>
 						</a>
@@ -37,7 +37,7 @@
 					<li class="nav-item">
 						<a data-bs-toggle="collapse" href="#buy" class="nav-link" aria-expanded="false">
 							<div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
-								<i class="fa-solid fa-truck-fast text-dark text-sm opacity-10"></i>
+								<i class="fa-solid fa-truck-fast text-info text-sm opacity-10"></i>
 							</div>
 							<span class="nav-link-text ms-2">Compras</span>
 						</a>
@@ -51,7 +51,7 @@
 					<li class="nav-item">
 						<a data-bs-toggle="collapse" href="#sale" class="nav-link" aria-expanded="false">
 							<div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
-								<i class="fa-solid fa-cart-shopping text-dark text-sm opacity-10"></i>
+								<i class="fa-solid fa-cart-shopping text-info text-sm opacity-10"></i>
 							</div>
 							<span class="nav-link-text ms-2">Ventas</span>
 						</a>
@@ -66,7 +66,7 @@
 					<li class="nav-item">
 						<a class="nav-link" href="<?= base_url('usuario');?>">
 							<div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-								<i class="fa-solid fa-users-gear text-dark text-sm opacity-10"></i>
+								<i class="fa-solid fa-users-gear text-info text-sm opacity-10"></i>
 							</div>
 							<span class="nav-link-text me-6">Usuarios</span>
 							<span class="badge bg-gradient-success">New</span>

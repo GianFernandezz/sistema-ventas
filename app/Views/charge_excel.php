@@ -97,7 +97,9 @@
                                 
                                 <br>
                                 
-                                <form method="post" action="<?= base_url('charge_excel/categoriaImport'); ?>"  enctype="multipart/form-data" id="form_carga_categorias">
+                                <!-- <form method="post" action="<?= base_url('charge_excel/categoriaImport'); ?>"  enctype="multipart/form-data" id="form_carga_categorias"> -->
+                                <!-- A traves del metodo ajax se hara la carga con el -->
+                                <form method="post" enctype="multipart/form-data" id="form_carga_categorias">
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <input type="file" name="fileCategorias" id="fileCategorias" class="form-control" accept=".xls, .xlsx">
@@ -108,6 +110,13 @@
                                     </div>
                                 </form>
                             </div> <!-- ./ end card-body -->
+                        </div>
+
+                        <!-- FILA PARA IMAGEN DEL GIF -->
+                        <div class="row mx-0">
+                            <div class="col-lg-12 mx-0 text-center">
+                                <img src="<?= base_url('assets/img/cat.gif'); ?>" id="img_carga" style="display:none;">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -125,11 +134,18 @@
                                             <input type="file" name="fileProductos" id="fileProductos" class="form-control" accept=".xls, .xlsx">
                                         </div>
                                         <div class="col-lg-2">
-                                            <input type="submit" value="Cargar Productos" class="btn btn-primary" id="btnCargar">
+                                            <input type="submit" value="Cargar Productos" class="btn btn-primary" id="btnCargar2">
                                         </div>
                                     </div>
                                 </form>
                             </div> <!-- ./ end card-body -->
+                        </div>
+
+                        <!-- FILA PARA IMAGEN DEL GIF -->
+                        <div class="row mx-0">
+                            <div class="col-lg-12 mx-0 text-center">
+                                <img src="<?= base_url('assets/img/cat.gif'); ?>" id="img_carga2" style="display:none;">
+                            </div>
                         </div>
                     </div>
                 </div>

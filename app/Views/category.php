@@ -59,9 +59,24 @@
 							<div>
 								<h5 class="mb-0">Todas las categorias</h5>
 							</div>
+
+							<!-- BOTONES PARA REPORTES (Excel | PDF)  TEST-->
+							<div class="ms-auto my-auto mt-lg-0 mt-4">								
+								<a href="<?= base_url('category/downloadCategory'); ?>" class="me-4">
+									<img src="<?= base_url('assets/img/excel.png'); ?>" alt="Download-Excel">
+								</a>	
+								<a href="<?= base_url('category/downloadCategory'); ?>">
+									<img src="<?= base_url('assets/img/pdf.png'); ?>" alt="Download-PDF">
+								</a>							
+							</div>
+							<!-- <div class="ms-4 ">								
+																
+							</div> -->
+							<!-- END -- BOTONES PARA REPORTES (Excel | PDF)  TEST-->
+
 							<div class="ms-auto my-auto mt-lg-0 mt-4">
-								<div class="ms-auto my-auto">
-									<button class="btn bg-gradient-primary btn-sm mb-0" data-bs-toggle="modal" data-bs-target="#modalAdd" @click="resetValues"><i class="fa-solid fa-plus"></i> Nuevo</button>
+								<div class="ms-auto my-auto">									
+									<button class="btn bg-gradient-primary btn-sm mb-0" data-bs-toggle="modal" data-bs-target="#modalAdd" @click="resetValues"><i class="fa-solid fa-plus"></i> Nuevo</button>									
 								</div>
 							</div>
 						</div>

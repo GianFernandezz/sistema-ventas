@@ -55,6 +55,21 @@ class ProductModel extends Model {
 
 		return $this->db->insertID();
 	}
+
+	///////////////EXCEL////////////////////////////
+	public function selectRow($id)
+    {
+        $builder = $this->db->table("product");
+        $builder->select("*");
+        $builder->where("id", $id);
+        $result = $builder->get();
+        // echo $this->db->getLastQuery();
+
+        return $result->getRow();
+
+        // "SELECT * FROM mytable WHERE key = '1213'";
+    }
+	///////////////EXCEL-END////////////////////////////
 	
 	public function createProduct($id, $data){
 		$this->db
@@ -63,6 +78,14 @@ class ProductModel extends Model {
 		->where('id', $id)
 		->update();
 	}
+
+	///////////////EXCEL////////////////////////////
+	public function updateProductExcel($id, $data){
+		$builder = $this->db->table("product");
+        $query =  $builder->where("id", $id);
+        return  $query->update($data);
+	}
+	///////////////EXCEL-END////////////////////////////
 
 	public function updateProduct($id, $data){
 		$this->db

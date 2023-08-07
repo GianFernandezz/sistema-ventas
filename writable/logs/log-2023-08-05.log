@@ -1,0 +1,65 @@
+CRITICAL - 2023-08-05 15:37:06 --> Undefined array key 7
+#0 C:\xampp\htdocs\sistemaventas\app\Controllers\Charge_excel.php(174): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 174)
+#1 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Charge_excel->productoImport()
+#2 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Charge_excel))
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-08-05 15:41:39 --> Undefined array key 7
+#0 C:\xampp\htdocs\sistemaventas\app\Controllers\Charge_excel.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 176)
+#1 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Charge_excel->productoImport()
+#2 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Charge_excel))
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-08-05 15:48:39 --> Undefined array key 7
+#0 C:\xampp\htdocs\sistemaventas\app\Controllers\Charge_excel.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 177)
+#1 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Charge_excel->productoImport()
+#2 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Charge_excel))
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-08-05 15:49:40 --> Undefined array key 7
+#0 C:\xampp\htdocs\sistemaventas\app\Controllers\Charge_excel.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 177)
+#1 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Charge_excel->productoImport()
+#2 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Charge_excel))
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2023-08-05 15:52:28 --> Column 'name' cannot be null
+ERROR - 2023-08-05 15:52:28 --> Column 'name' cannot be null
+ERROR - 2023-08-05 15:52:28 --> Column 'name' cannot be null
+ERROR - 2023-08-05 15:52:28 --> Column 'name' cannot be null
+ERROR - 2023-08-05 15:52:28 --> Column 'name' cannot be null
+ERROR - 2023-08-05 15:52:28 --> Column 'name' cannot be null
+ERROR - 2023-08-05 16:02:37 --> Column 'barcode' cannot be null
+ERROR - 2023-08-05 16:02:37 --> Column 'barcode' cannot be null
+ERROR - 2023-08-05 16:02:37 --> Column 'barcode' cannot be null
+ERROR - 2023-08-05 16:04:22 --> Column 'barcode' cannot be null
+ERROR - 2023-08-05 16:04:22 --> Column 'barcode' cannot be null
+ERROR - 2023-08-05 16:04:22 --> Column 'barcode' cannot be null
+ERROR - 2023-08-05 16:05:54 --> Column 'barcode' cannot be null
+ERROR - 2023-08-05 16:05:54 --> Column 'barcode' cannot be null
+ERROR - 2023-08-05 16:05:54 --> Column 'barcode' cannot be null
+ERROR - 2023-08-05 16:09:36 --> Cannot add or update a child row: a foreign key constraint fails (`salessystem`.`product`, CONSTRAINT `product_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`))
+ERROR - 2023-08-05 16:09:36 --> Cannot add or update a child row: a foreign key constraint fails (`salessystem`.`product`, CONSTRAINT `product_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`))
+ERROR - 2023-08-05 16:09:36 --> Column 'barcode' cannot be null
+ERROR - 2023-08-05 16:09:36 --> Column 'barcode' cannot be null
+ERROR - 2023-08-05 16:09:36 --> Column 'barcode' cannot be null
+ERROR - 2023-08-05 16:10:20 --> Cannot add or update a child row: a foreign key constraint fails (`salessystem`.`product`, CONSTRAINT `product_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`))
+ERROR - 2023-08-05 16:10:21 --> Cannot add or update a child row: a foreign key constraint fails (`salessystem`.`product`, CONSTRAINT `product_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`))
+ERROR - 2023-08-05 16:10:21 --> Column 'barcode' cannot be null
+ERROR - 2023-08-05 16:10:21 --> Column 'barcode' cannot be null
+ERROR - 2023-08-05 16:10:21 --> Column 'barcode' cannot be null
+ERROR - 2023-08-05 16:14:16 --> Column 'barcode' cannot be null
+ERROR - 2023-08-05 16:14:16 --> Column 'barcode' cannot be null
+ERROR - 2023-08-05 16:14:16 --> Column 'barcode' cannot be null
+ERROR - 2023-08-05 16:14:16 --> Column 'barcode' cannot be null
+ERROR - 2023-08-05 16:14:16 --> Column 'barcode' cannot be null
+ERROR - 2023-08-05 16:14:16 --> Column 'barcode' cannot be null
+ERROR - 2023-08-05 16:14:16 --> Column 'barcode' cannot be null
+ERROR - 2023-08-05 16:14:16 --> Column 'barcode' cannot be null

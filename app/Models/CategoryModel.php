@@ -25,6 +25,17 @@ class CategoryModel extends Model {
     }
 
 	///////////////EXCEL////////////////////////////
+	// ESTO ES PARA REPORTE EXCEL
+	public function selectCategory()
+    {
+        $builder = $this->db->table("category");
+        $builder->select("*");
+        $result = $builder->get();
+
+        return $result->getResult();
+    }
+	// ESTO ES PARA REPORTE EXCEL | END |
+
 	public function selectRow($id)
     {
         $builder = $this->db->table("category");
