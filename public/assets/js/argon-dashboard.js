@@ -1,8 +1,7 @@
 
 // initialization of Tooltips
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl)
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
 })
 
 
@@ -37,7 +36,7 @@ function toggleSidenav() {
 	}
 }
 // <!-- Para que cunado le demos  click en cada opcion se coloree! -->
-// En estado de Prueba
+// En estado de Prueba - CAMBIAR A UN ID
 $(".nav-link").on('click',function(){
   $(".nav-link").removeClass('active');
   $(this).addClass('active');

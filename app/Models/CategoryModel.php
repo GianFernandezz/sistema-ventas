@@ -23,9 +23,15 @@ class CategoryModel extends Model {
 
 		return $results;
     }
+	// ! -> EST ES PARA REPORTE PDF
 
-	///////////////EXCEL////////////////////////////
-	// ESTO ES PARA REPORTE EXCEL
+	public function dataCategory(){
+		$sqlCategory = $this->db->query("SELECT * FROM category");
+       	return $sqlCategory;
+	}
+	// ! -> EST ES PARA REPORTE PDF | END
+
+	// TODO -> ESTO ES PARA REPORTE EXCEL
 	public function selectCategory()
     {
         $builder = $this->db->table("category");
@@ -34,7 +40,7 @@ class CategoryModel extends Model {
 
         return $result->getResult();
     }
-	// ESTO ES PARA REPORTE EXCEL | END |
+	
 
 	public function selectRow($id)
     {
@@ -45,23 +51,22 @@ class CategoryModel extends Model {
         // echo $this->db->getLastQuery();
 
         return $result->getRow();
-
-        // "SELECT * FROM mytable WHERE key = '1213'";
     }
-	///////////////EXCEL-END////////////////////////////
+	// TODO -> ESTO ES PARA REPORTE EXCEL | END |
+
     public function createCategory($data){
 		$this->db
 		->table('category')
 		->set($data)
 		->insert();
 	}
-	///////////////EXCEL////////////////////////////
+	// TODO -> ESTO ES PARA REPORTE EXCEL |
 	public function updateCategoryExcel($id, $data){
 		$builder = $this->db->table("category");
         $query =  $builder->where("id", $id);
         return  $query->update($data);
 	}
-	///////////////EXCEL-END////////////////////////////
+	// TODO -> ESTO ES PARA REPORTE EXCEL | END |
 	public function updateCategory($id, $data){
 		$this->db
 		->table('category')

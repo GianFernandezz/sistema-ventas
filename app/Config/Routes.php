@@ -55,6 +55,8 @@ $routes->add('nueva-venta', 'Sale\Add::index', ['filter' => 'auth:web']);
 $routes->add('venta', 'Sale\Main::index', ['filter' => 'auth:web']);
 $routes->add('detalle-venta/(:any)', 'Sale\Detail::index/$1', ['filter' => 'auth:web']);
 
+
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

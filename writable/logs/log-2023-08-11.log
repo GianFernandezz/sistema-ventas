@@ -1,0 +1,279 @@
+CRITICAL - 2023-08-11 01:28:44 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-08-11 01:30:16 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-08-11 01:38:27 --> file_get_contents(/lib/fonts/installed-fonts.dist.json): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'C:\\xampp\\htdocs...', 116)
+#1 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\FontMetrics.php(116): file_get_contents('/lib/fonts/inst...')
+#2 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\FontMetrics.php(75): Dompdf\FontMetrics->loadFontFamilies()
+#3 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\Dompdf.php(275): Dompdf\FontMetrics->__construct(Object(Dompdf\Adapter\CPDF), Object(Dompdf\Options))
+#4 C:\xampp\htdocs\sistemaventasVersionDompdf\app\Controllers\ReportAll.php(46): Dompdf\Dompdf->__construct()
+#5 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptCategory()
+#6 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#7 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistemaventasVersionDompdf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\sistemaventasVersionDompdf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-08-11 10:17:17 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-08-11 12:40:54 --> Call to a member function get_cellmap() on null
+#0 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\TableCell->reflow(Object(Dompdf\FrameDecorator\Block))
+#1 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\FrameReflower\Block.php(865): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow(Object(Dompdf\FrameDecorator\Block))
+#2 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\Block->reflow(NULL)
+#3 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\FrameReflower\Page.php(142): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#4 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\Page->reflow(NULL)
+#5 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\Dompdf.php(765): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#6 C:\xampp\htdocs\sistemaventasVersionDompdf\app\Controllers\ReportAll.php(57): Dompdf\Dompdf->render()
+#7 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptCategory()
+#8 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#9 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\sistemaventasVersionDompdf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\sistemaventasVersionDompdf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-08-11 12:41:19 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 262148096 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-08-11 12:41:44 --> Call to a member function get_cellmap() on null
+#0 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\TableCell->reflow(Object(Dompdf\FrameDecorator\Block))
+#1 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\FrameReflower\Block.php(865): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow(Object(Dompdf\FrameDecorator\Block))
+#2 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\Block->reflow(NULL)
+#3 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\FrameReflower\Page.php(142): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#4 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\Page->reflow(NULL)
+#5 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\Dompdf.php(765): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#6 C:\xampp\htdocs\sistemaventasVersionDompdf\app\Controllers\ReportAll.php(57): Dompdf\Dompdf->render()
+#7 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptCategory()
+#8 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#9 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\sistemaventasVersionDompdf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\sistemaventasVersionDompdf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-08-11 12:42:06 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 262148096 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-08-11 13:46:47 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-08-11 13:47:50 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-08-11 13:50:08 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-08-11 13:52:53 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-08-11 15:01:08 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\sistemaventasVersionDompdf\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\sistemaventasVersionDompdf\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\sistemaventasVersionDompdf\app\Controllers\ReportAll.php(85): CodeIgniter\Model->__call('dataCategory', Array)
+#3 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptProduct()
+#4 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#5 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sistemaventasVersionDompdf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\sistemaventasVersionDompdf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-08-11 15:03:48 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\sistemaventasVersionDompdf\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\sistemaventasVersionDompdf\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\sistemaventasVersionDompdf\app\Controllers\ReportAll.php(85): CodeIgniter\Model->__call('dataCategory', Array)
+#3 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptProduct()
+#4 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#5 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sistemaventasVersionDompdf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\sistemaventasVersionDompdf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-08-11 15:03:55 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\sistemaventasVersionDompdf\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\sistemaventasVersionDompdf\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\sistemaventasVersionDompdf\app\Controllers\ReportAll.php(85): CodeIgniter\Model->__call('dataCategory', Array)
+#3 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptProduct()
+#4 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#5 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sistemaventasVersionDompdf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\sistemaventasVersionDompdf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-08-11 15:04:16 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\sistemaventasVersionDompdf\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\sistemaventasVersionDompdf\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\sistemaventasVersionDompdf\app\Controllers\ReportAll.php(85): CodeIgniter\Model->__call('dataCategory', Array)
+#3 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptProduct()
+#4 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#5 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sistemaventasVersionDompdf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\sistemaventasVersionDompdf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-08-11 15:06:39 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-08-11 15:07:55 --> Undefined array key "pricesale"
+#0 C:\xampp\htdocs\sistemaventasVersionDompdf\app\Views\Report\rptProduct.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 85)
+#1 C:\xampp\htdocs\sistemaventasVersionDompdf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistemaventasVersionDompdf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistemaventasVersionDompdf\system\Common.php(1089): CodeIgniter\View\View->render('Report/rptProdu...', Array, true)
+#4 C:\xampp\htdocs\sistemaventasVersionDompdf\app\Controllers\ReportAll.php(97): view('Report/rptProdu...', Array)
+#5 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptProduct()
+#6 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#7 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistemaventasVersionDompdf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\sistemaventasVersionDompdf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-08-11 15:34:48 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-08-11 15:37:32 --> getimagesize(file://C:\xampp\htdocs\sistemaventasVersionDompdf\public\assets\img\product): Failed to open stream: Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'getimagesize(fi...', 'C:\\xampp\\htdocs...', 670)
+#1 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\Helpers.php(670): getimagesize('file://C:\\xampp...')
+#2 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\Image\Cache.php(124): Dompdf\Helpers::dompdf_getimagesize('file://C:\\xampp...', Resource id #149)
+#3 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\FrameDecorator\Image.php(53): Dompdf\Image\Cache::resolve_url('assets/img/prod...', 'file://', '', '', Object(Dompdf\Options))
+#4 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\Frame\Factory.php(198): Dompdf\FrameDecorator\Image->__construct(Object(Dompdf\Frame), Object(Dompdf\Dompdf))
+#5 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\Dompdf.php(731): Dompdf\Frame\Factory::decorate_frame(Object(Dompdf\Frame), Object(Dompdf\Dompdf), Object(Dompdf\FrameDecorator\Page))
+#6 C:\xampp\htdocs\sistemaventasVersionDompdf\app\Controllers\ReportAll.php(105): Dompdf\Dompdf->render()
+#7 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptProduct()
+#8 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#9 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\sistemaventasVersionDompdf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\sistemaventasVersionDompdf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-08-11 15:37:50 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 262148096 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-08-11 15:39:22 --> Attempt to read property "picture" on array
+#0 C:\xampp\htdocs\sistemaventasVersionDompdf\app\Views\Report\rptProduct.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 82)
+#1 C:\xampp\htdocs\sistemaventasVersionDompdf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistemaventasVersionDompdf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistemaventasVersionDompdf\system\Common.php(1089): CodeIgniter\View\View->render('Report/rptProdu...', Array, true)
+#4 C:\xampp\htdocs\sistemaventasVersionDompdf\app\Controllers\ReportAll.php(97): view('Report/rptProdu...', Array)
+#5 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptProduct()
+#6 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#7 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistemaventasVersionDompdf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\sistemaventasVersionDompdf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-08-11 15:49:31 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-08-11 15:54:23 --> getimagesize(file://C:\xampp\htdocs\sistemaventasVersionDompdf\public\assets\img\product): Failed to open stream: Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'getimagesize(fi...', 'C:\\xampp\\htdocs...', 670)
+#1 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\Helpers.php(670): getimagesize('file://C:\\xampp...')
+#2 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\Image\Cache.php(124): Dompdf\Helpers::dompdf_getimagesize('file://C:\\xampp...', Resource id #149)
+#3 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\FrameDecorator\Image.php(53): Dompdf\Image\Cache::resolve_url('assets/img/prod...', 'file://', '', '', Object(Dompdf\Options))
+#4 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\Frame\Factory.php(198): Dompdf\FrameDecorator\Image->__construct(Object(Dompdf\Frame), Object(Dompdf\Dompdf))
+#5 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\Dompdf.php(731): Dompdf\Frame\Factory::decorate_frame(Object(Dompdf\Frame), Object(Dompdf\Dompdf), Object(Dompdf\FrameDecorator\Page))
+#6 C:\xampp\htdocs\sistemaventasVersionDompdf\app\Controllers\ReportAll.php(105): Dompdf\Dompdf->render()
+#7 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptProduct()
+#8 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#9 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\sistemaventasVersionDompdf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\sistemaventasVersionDompdf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-08-11 15:54:41 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 262148096 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-08-11 15:55:31 --> getimagesize(file://C:\xampp\htdocs\sistemaventasVersionDompdf\public\assets\img\product): Failed to open stream: Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'getimagesize(fi...', 'C:\\xampp\\htdocs...', 670)
+#1 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\Helpers.php(670): getimagesize('file://C:\\xampp...')
+#2 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\Image\Cache.php(124): Dompdf\Helpers::dompdf_getimagesize('file://C:\\xampp...', Resource id #149)
+#3 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\FrameDecorator\Image.php(53): Dompdf\Image\Cache::resolve_url('assets/img/prod...', 'file://', '', '', Object(Dompdf\Options))
+#4 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\Frame\Factory.php(198): Dompdf\FrameDecorator\Image->__construct(Object(Dompdf\Frame), Object(Dompdf\Dompdf))
+#5 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\Dompdf.php(731): Dompdf\Frame\Factory::decorate_frame(Object(Dompdf\Frame), Object(Dompdf\Dompdf), Object(Dompdf\FrameDecorator\Page))
+#6 C:\xampp\htdocs\sistemaventasVersionDompdf\app\Controllers\ReportAll.php(105): Dompdf\Dompdf->render()
+#7 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptProduct()
+#8 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#9 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\sistemaventasVersionDompdf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\sistemaventasVersionDompdf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-08-11 15:55:51 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 262148096 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-08-11 16:27:41 --> getimagesize(file://C:\xampp\htdocs\sistemaventasVersionDompdf\public\assets\img\product): Failed to open stream: Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'getimagesize(fi...', 'C:\\xampp\\htdocs...', 670)
+#1 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\Helpers.php(670): getimagesize('file://C:\\xampp...')
+#2 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\Image\Cache.php(124): Dompdf\Helpers::dompdf_getimagesize('file://C:\\xampp...', Resource id #149)
+#3 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\FrameDecorator\Image.php(53): Dompdf\Image\Cache::resolve_url('assets/img/prod...', 'file://', '', '', Object(Dompdf\Options))
+#4 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\Frame\Factory.php(198): Dompdf\FrameDecorator\Image->__construct(Object(Dompdf\Frame), Object(Dompdf\Dompdf))
+#5 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\Dompdf.php(731): Dompdf\Frame\Factory::decorate_frame(Object(Dompdf\Frame), Object(Dompdf\Dompdf), Object(Dompdf\FrameDecorator\Page))
+#6 C:\xampp\htdocs\sistemaventasVersionDompdf\app\Controllers\ReportAll.php(105): Dompdf\Dompdf->render()
+#7 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptProduct()
+#8 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#9 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\sistemaventasVersionDompdf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\sistemaventasVersionDompdf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-08-11 16:28:04 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 262148096 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-08-11 16:35:46 --> Call to undefined method Dompdf\Options::set_option()
+#0 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptProduct()
+#1 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#2 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\sistemaventasVersionDompdf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\sistemaventasVersionDompdf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2023-08-11 16:52:59 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-08-11 16:55:09 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-08-11 18:10:07 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-08-11 18:18:30 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-08-11 18:19:40 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-08-11 18:26:34 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-08-11 18:28:39 --> getimagesize(file://C:\xampp\htdocs\sistemaventasVersionDompdf\public\assets\img\product): Failed to open stream: Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'getimagesize(fi...', 'C:\\xampp\\htdocs...', 670)
+#1 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\Helpers.php(670): getimagesize('file://C:\\xampp...')
+#2 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\Image\Cache.php(124): Dompdf\Helpers::dompdf_getimagesize('file://C:\\xampp...', Resource id #149)
+#3 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\FrameDecorator\Image.php(53): Dompdf\Image\Cache::resolve_url('assets/img/prod...', 'file://', '', '', Object(Dompdf\Options))
+#4 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\Frame\Factory.php(198): Dompdf\FrameDecorator\Image->__construct(Object(Dompdf\Frame), Object(Dompdf\Dompdf))
+#5 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\Dompdf.php(731): Dompdf\Frame\Factory::decorate_frame(Object(Dompdf\Frame), Object(Dompdf\Dompdf), Object(Dompdf\FrameDecorator\Page))
+#6 C:\xampp\htdocs\sistemaventasVersionDompdf\app\Controllers\ReportAll.php(106): Dompdf\Dompdf->render()
+#7 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptProduct()
+#8 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#9 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\sistemaventasVersionDompdf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\sistemaventasVersionDompdf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-08-11 18:28:58 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 262148096 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-08-11 18:29:06 --> getimagesize(file://C:\xampp\htdocs\sistemaventasVersionDompdf\public\assets\img\product): Failed to open stream: Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'getimagesize(fi...', 'C:\\xampp\\htdocs...', 670)
+#1 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\Helpers.php(670): getimagesize('file://C:\\xampp...')
+#2 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\Image\Cache.php(124): Dompdf\Helpers::dompdf_getimagesize('file://C:\\xampp...', Resource id #149)
+#3 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\FrameDecorator\Image.php(53): Dompdf\Image\Cache::resolve_url('assets/img/prod...', 'file://', '', '', Object(Dompdf\Options))
+#4 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\Frame\Factory.php(198): Dompdf\FrameDecorator\Image->__construct(Object(Dompdf\Frame), Object(Dompdf\Dompdf))
+#5 C:\xampp\htdocs\sistemaventasVersionDompdf\vendor\dompdf\dompdf\src\Dompdf.php(731): Dompdf\Frame\Factory::decorate_frame(Object(Dompdf\Frame), Object(Dompdf\Dompdf), Object(Dompdf\FrameDecorator\Page))
+#6 C:\xampp\htdocs\sistemaventasVersionDompdf\app\Controllers\ReportAll.php(106): Dompdf\Dompdf->render()
+#7 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptProduct()
+#8 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#9 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\sistemaventasVersionDompdf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\sistemaventasVersionDompdf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-08-11 18:29:25 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 262148096 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-08-11 18:34:17 --> Attempt to read property "picture" on array
+#0 C:\xampp\htdocs\sistemaventasVersionDompdf\app\Views\Report\rptProduct.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 80)
+#1 C:\xampp\htdocs\sistemaventasVersionDompdf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistemaventasVersionDompdf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistemaventasVersionDompdf\system\Common.php(1089): CodeIgniter\View\View->render('Report/rptProdu...', Array, true)
+#4 C:\xampp\htdocs\sistemaventasVersionDompdf\app\Controllers\ReportAll.php(98): view('Report/rptProdu...', Array)
+#5 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptProduct()
+#6 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#7 C:\xampp\htdocs\sistemaventasVersionDompdf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistemaventasVersionDompdf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\sistemaventasVersionDompdf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}

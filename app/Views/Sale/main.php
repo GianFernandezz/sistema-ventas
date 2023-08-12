@@ -88,7 +88,7 @@
 
 										<td>
 											<div class="ms-auto text-lg d-flex px-2">
-												<div><a class="btn btn-link px-2 mb-0 bg-gradient-warning btn-sm" rel="tooltip" title="Ver detalle" href="<?= base_url('detalle-venta/'.$sale->id);?>"><i class='bx bxs-file-find mt-1' style="font-size: 24px;"></i></a></div>
+												<div><a class="btn btn-link px-2 mb-0 bg-gradient-warning btn-sm" data-toggle="tooltip" data-placement="top" title="Ver detalle" href="<?= base_url('detalle-venta/'.$sale->id);?>"><i class='bx bxs-file-find mt-1' style="font-size: 24px;"></i></a></div>
 											</div>
 										</td>
 
