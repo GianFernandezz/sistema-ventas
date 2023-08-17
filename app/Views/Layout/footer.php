@@ -29,9 +29,9 @@
 <script src="<?= base_url('assets/js/plugins/datatables.js');?>"></script>
 <script src="<?= base_url('assets/js/argon-dashboard.js');?>"></script>
 <!-- El script de la librería-->
-<script src="<?= base_url('assets/js/html2pdf.bundle.min.js');?>"></script>
+<!-- <script src="<?= base_url('assets/js/html2pdf.bundle.min.js');?>"></script> -->
 <!--Nuestro script, que se encarga de crear el PDF usando la librería-->
-<script src="<?= base_url('assets/js/createPDF.js');?>"></script>
+<!-- <script src="<?= base_url('assets/js/createPDF.js');?>"></script> -->
 
 
 

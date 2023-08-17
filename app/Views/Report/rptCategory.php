@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Category</title>
+    <title>Categoria</title>
     <style>
         .border-table{
             font-family: Arial, Helvetica, sans-serif;
@@ -51,19 +51,12 @@
 </head>
 
 
-<body>
-        <!-- Product List -->
-        <!-- <div>
-            <h5>Todas las categorias</h5>
-            <img src="assets/img/charge-excel.png" alt="">
-        </div> -->
-        
-            <header id="cabecera">
-                <img class="logo" src="assets/img/charge-excel.png">
-                <h1 id="titulo">Lista de Categorias</h1>
-            </header>
+<body>  
+    <header id="cabecera">
+        <img class="logo" src="assets/img/charge-excel.png">
+        <h1 id="titulo">Lista de Categorias</h1>
+    </header>
       
-
     <table class="border-table">
         <thead>
             <tr>
@@ -77,9 +70,7 @@
         <?php 
             foreach($categorias as $categoria){  ?>
             <tr>
-            
                 <!-- <td class="px-4 text-xs font-weight-bold" width="20%"><?= $categoria['id'];  ?></td> -->
-             
                 <td width="20%"><?= $categoria['name'];  ?></td>
                 <td><?= $categoria['description'];  ?></td>
             </tr>

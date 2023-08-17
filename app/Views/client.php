@@ -59,6 +59,16 @@
 							<div>
 								<h5 class="mb-0">Todos los clientes</h5>
 							</div>
+							<!-- //? BOTONES PARA REPORTES (Excel | PDF) -->
+							<div class="ms-auto my-auto mt-lg-0 mt-4">								
+								<a href="<?= base_url('reportall/downloadExcelClient'); ?>" class="btn bg-gradient-default me-4" data-toggle="tooltip" data-placement="top" title="Reporte Excel">
+									<img src="<?= base_url('assets/img/excel.png'); ?>" alt="Download-Excel">
+								</a>	
+								<a href="<?= base_url('reportall/rptClient'); ?>" class="btn bg-gradient-default" data-toggle="tooltip" data-placement="top" title="Reporte PDF" target="_blank">
+									<img src="<?= base_url('assets/img/pdf.png'); ?>" alt="Download-PDF">
+								</a>							
+							</div>
+							<!-- //? END -- BOTONES PARA REPORTES (Excel | PDF) -->
 							<div class="ms-auto my-auto mt-lg-0 mt-4">
 								<div class="ms-auto my-auto">
 									<button class="btn bg-gradient-primary btn-sm mb-0" data-bs-toggle="modal" data-bs-target="#modalAdd" @click="resetValues"><i class="fa-solid fa-plus"></i> Nuevo</button>
@@ -82,6 +92,7 @@
 										<th class="text-uppercase text-xs font-weight-bolder opacity-7">Cliente</th>
 										<th class="text-uppercase text-xs font-weight-bolder opacity-7 ps-2">T. Documento</th>
 										<th class="text-uppercase text-xs font-weight-bolder opacity-7 ps-2">N° Documento</th>
+										<th class="text-uppercase text-xs font-weight-bolder opacity-7 ps-2">Direccion</th>
 										<th class="text-uppercase text-xs font-weight-bolder opacity-7 ps-2">Cel/Tel</th>
 										<th class="text-uppercase text-xs font-weight-bolder opacity-7 ps-2">Email</th>
 										<th></th>
@@ -92,6 +103,7 @@
 										<td class="px-4 text-xs font-weight-bold" width="20%">{{ item.name }}</td>
 										<td width="15%"><span class="text-xs font-weight-bold">{{ item.typedocument }}</span></td>
 										<td width="15%"><span class="text-xs font-weight-bold">{{ item.numdocument }}</span></td>
+										<td width="15%"><span class="text-xs font-weight-bold">{{ item.address }}</span></td>
 										<td width="15%"><span class="text-xs font-weight-bold">{{ item.phonenumber }}</span></td>
 										<td><span class="text-xs font-weight-bold">{{ item.email }}</span></td>
 

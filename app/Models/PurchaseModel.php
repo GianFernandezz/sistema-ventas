@@ -3,7 +3,7 @@ namespace App\Models;
 use CodeIgniter\Model;
 
 class PurchaseModel extends Model {
-
+	// ! -> Se uso para report PDF and EXCEL
 	public function readPurchases(){
 		$results = $this->db
 		->table('purchase p')
@@ -15,6 +15,7 @@ class PurchaseModel extends Model {
 
 		return $results;
     }
+	// ! -> Se uso para report PDF and EXCEL | END
 
 	public function readProducts(){
 		$results = $this->db

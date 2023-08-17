@@ -48,5 +48,23 @@ class UserManagementModel extends Model {
 
 		return $this->db->affectedRows();
 	}
+	// ! -> EST ES PARA REPORTE PDF
+
+	public function dataUser(){
+		$sqlUser = $this->db->query("SELECT * FROM users");
+       	return $sqlUser;
+	}
+	// ! -> EST ES PARA REPORTE PDF | END
+
+	// TODO -> ESTO ES PARA REPORTE EXCEL
+	public function selectUser()
+    {
+        $builder = $this->db->table("users");
+        $builder->select("*");
+        $result = $builder->get();
+
+        return $result->getResult();
+    }
+	// TODO -> ESTO ES PARA REPORTE EXCEL | END
 
 }

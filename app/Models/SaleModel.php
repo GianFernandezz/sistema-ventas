@@ -3,7 +3,8 @@ namespace App\Models;
 use CodeIgniter\Model;
 
 class SaleModel extends Model {
-
+	
+	// ! -> Se uso para report PDF and EXCEL
 	public function readSales(){
 		$results = $this->db
 		->table('sale s')
@@ -15,6 +16,7 @@ class SaleModel extends Model {
 
 		return $results;
     }
+	// ! -> Se uso para report PDF and EXCEL | END
 
 	public function readProducts(){
 		$results = $this->db

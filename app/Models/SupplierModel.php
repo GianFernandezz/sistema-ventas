@@ -47,4 +47,22 @@ class SupplierModel extends Model {
 		return $this->db->affectedRows();
 	}
 
+	// ! -> EST ES PARA REPORTE PDF
+
+	public function dataSupplier(){
+		$sqlSupplier = $this->db->query("SELECT * FROM supplier");
+       	return $sqlSupplier;
+	}
+	// ! -> EST ES PARA REPORTE PDF | END
+
+	// TODO -> ESTO ES PARA REPORTE EXCEL
+	public function selectSupplier()
+    {
+        $builder = $this->db->table("supplier");
+        $builder->select("*");
+        $result = $builder->get();
+
+        return $result->getResult();
+    }
+	// TODO -> ESTO ES PARA REPORTE EXCEL | END
 }

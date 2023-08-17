@@ -12,7 +12,7 @@ class ProductModel extends Model {
 
 		return json_encode($results);
     }
-	
+	// ! -> Se uso para report PDF and EXCEL
 	public function readProducts(){
 		$results = $this->db
 		->table('product p')
@@ -24,14 +24,7 @@ class ProductModel extends Model {
 
 		return $results;
     }
-	// ! -> EST ES PARA REPORTE PDF
-
-	public function dataProduct(){
-		$sqlProduct = $this->db->query("SELECT p.id, p.name, p.barcode, p.price_sale as pricesale, p.stock, p.picture, c.name as category FROM product p 
-		INNER JOIN category c ON p.category_id=c.id");
-       	return $sqlProduct;
-	}
-	// ! -> EST ES PARA REPORTE PDF | END
+	// ! -> Se uso para report PDF and EXCEL | END
 
 	public function readProduct($id){
 		$results = $this->db
@@ -63,19 +56,6 @@ class ProductModel extends Model {
 
 		return $this->db->insertID();
 	}
-
-	// TODO -> /////////////EXCEL////////////////////////////
-	public function selectRow($id)
-    {
-        $builder = $this->db->table("product");
-        $builder->select("*");
-        $builder->where("id", $id);
-        $result = $builder->get();
-        // echo $this->db->getLastQuery();
-
-        return $result->getRow();
-    }
-	// TODO -> /////////////EXCEL END////////////////////////////
 	
 	public function createProduct($id, $data){
 		$this->db
@@ -84,14 +64,6 @@ class ProductModel extends Model {
 		->where('id', $id)
 		->update();
 	}
-
-	// TODO -> /////////////EXCEL////////////////////////////
-	public function updateProductExcel($id, $data){
-		$builder = $this->db->table("product");
-        $query =  $builder->where("id", $id);
-        return  $query->update($data);
-	}
-	// TODO -> /////////////EXCEL END////////////////////////////
 
 	public function updateProduct($id, $data){
 		$this->db
@@ -109,5 +81,23 @@ class ProductModel extends Model {
 
 		return $this->db->affectedRows();
 	}
+
+	// TODO -> ESTO ES PARA LA CARGA MASIVA EXCEL
+	public function selectRow($id)
+    {
+        $builder = $this->db->table("product");
+        $builder->select("*");
+        $builder->where("id", $id);
+        $result = $builder->get();
+
+        return $result->getRow();
+    }
+	
+	public function updateProductExcel($id, $data){
+		$builder = $this->db->table("product");
+        $query =  $builder->where("id", $id);
+        return  $query->update($data);
+	}
+	// TODO -> ESTO ES PARA LA CARGA MASIVA EXCEL | END
 
 }

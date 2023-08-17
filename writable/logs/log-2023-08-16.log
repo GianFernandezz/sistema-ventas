@@ -1,0 +1,390 @@
+ERROR - 2023-08-16 11:37:28 --> Error connecting to the database: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+CRITICAL - 2023-08-16 11:37:28 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+#0 C:\xampp\htdocs\sistemaventas\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\sistemaventas\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\sistemaventas\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\sistemaventas\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\xampp\htdocs\sistemaventas\app\ThirdParty\codeigniter4-authentication\src\Traits\UserProviderTrait.php(60): CodeIgniter\BaseModel->first()
+#5 C:\xampp\htdocs\sistemaventas\app\ThirdParty\codeigniter4-authentication\src\Adapters\SessionAdapter.php(101): App\Models\UserModel->findByCredentials(Array)
+#6 C:\xampp\htdocs\sistemaventas\app\ThirdParty\codeigniter4-authentication\src\AuthManager.php(339): Fluent\Auth\Adapters\SessionAdapter->attempt(Array, false)
+#7 C:\xampp\htdocs\sistemaventas\app\ThirdParty\codeigniter4-authentication\src\Facades\Auth.php(58): Fluent\Auth\AuthManager->__call('attempt', Array)
+#8 C:\xampp\htdocs\sistemaventas\app\Controllers\Auth\AuthenticatedSessionController.php(73): Fluent\Auth\Facades\Auth::__callStatic('attempt', Array)
+#9 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Auth\AuthenticatedSessionController->create()
+#10 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\AuthenticatedSessionController))
+#11 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-08-16 12:24:30 --> Archivo no encontrado: Test.xlsx
+#0 C:\xampp\htdocs\sistemaventas\system\Files\File.php(46): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('Test.xlsx')
+#1 C:\xampp\htdocs\sistemaventas\system\HTTP\DownloadResponse.php(107): CodeIgniter\Files\File->__construct('Test.xlsx', true)
+#2 C:\xampp\htdocs\sistemaventas\system\HTTP\ResponseTrait.php(774): CodeIgniter\HTTP\DownloadResponse->setFilePath('Test.xlsx')
+#3 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(156): CodeIgniter\HTTP\Response->download('Test.xlsx', NULL)
+#4 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->downloadCategory()
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#6 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-08-16 12:25:25 --> fopen(data.xlsx): Failed to open stream: Resource temporarily unavailable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(data.xlsx...', 'C:\\xampp\\htdocs...', 128)
+#1 C:\xampp\htdocs\sistemaventas\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php(128): fopen('data.xlsx', 'wb')
+#2 C:\xampp\htdocs\sistemaventas\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Xlsx.php(547): PhpOffice\PhpSpreadsheet\Writer\BaseWriter->openFileHandle('data.xlsx')
+#3 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(155): PhpOffice\PhpSpreadsheet\Writer\Xlsx->save('data.xlsx')
+#4 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->downloadCategory()
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#6 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-08-16 13:26:48 --> Undefined property: stdClass::$preci_sale
+#0 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(220): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 220)
+#1 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->downloadExcelProduct()
+#2 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-08-16 13:30:44 --> Undefined property: mysqli::$name
+#0 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(217): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 217)
+#1 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->downloadExcelProduct()
+#2 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-08-16 13:34:06 --> Undefined property: mysqli::$name
+#0 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(217): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 217)
+#1 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->downloadExcelProduct()
+#2 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-08-16 13:36:44 --> Undefined property: mysqli::$name
+#0 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(217): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 217)
+#1 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->downloadExcelProduct()
+#2 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-08-16 13:36:57 --> Undefined property: mysqli::$name
+#0 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(217): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 217)
+#1 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->downloadExcelProduct()
+#2 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-08-16 13:37:09 --> Undefined property: mysqli::$name
+#0 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(217): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 217)
+#1 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->downloadExcelProduct()
+#2 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2023-08-16 13:38:04 --> Unknown column 'c.id' in 'field list'
+CRITICAL - 2023-08-16 13:38:04 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(205): App\Models\ProductModel->selectProduct()
+#1 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->downloadExcelProduct()
+#2 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-08-16 13:39:01 --> Undefined property: mysqli::$name
+#0 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(217): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 217)
+#1 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->downloadExcelProduct()
+#2 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-08-16 13:39:20 --> Undefined property: stdClass::$category
+#0 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(219): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 219)
+#1 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->downloadExcelProduct()
+#2 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-08-16 13:39:56 --> Attempt to read property "name" on string
+#0 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(219): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 219)
+#1 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->downloadExcelProduct()
+#2 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-08-16 18:35:58 --> CellRange array length must be 2 or 4
+#0 C:\xampp\htdocs\sistemaventas\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Worksheet\Validations.php(53): PhpOffice\PhpSpreadsheet\Worksheet\Validations::validateCellRange(Array)
+#1 C:\xampp\htdocs\sistemaventas\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Worksheet\Worksheet.php(1530): PhpOffice\PhpSpreadsheet\Worksheet\Validations::validateCellOrCellRange(Array)
+#2 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(208): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->getStyle(Array)
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->downloadExcelProduct()
+#4 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-08-16 18:39:48 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\sistemaventas\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Worksheet\Validations.php(53): PhpOffice\PhpSpreadsheet\Worksheet\Validations::validateCellRange(Object(stdClass))
+#1 C:\xampp\htdocs\sistemaventas\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Worksheet\Worksheet.php(1530): PhpOffice\PhpSpreadsheet\Worksheet\Validations::validateCellOrCellRange(Object(stdClass))
+#2 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(223): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->getStyle(Object(stdClass))
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->downloadExcelProduct()
+#4 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-08-16 19:17:37 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-08-16 19:21:22 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-08-16 19:25:06 --> getimagesize(file://C:\xampp\htdocs\sistemaventas\public\assets\img\product): Failed to open stream: Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'getimagesize(fi...', 'C:\\xampp\\htdocs...', 670)
+#1 C:\xampp\htdocs\sistemaventas\vendor\dompdf\dompdf\src\Helpers.php(670): getimagesize('file://C:\\xampp...')
+#2 C:\xampp\htdocs\sistemaventas\vendor\dompdf\dompdf\src\Image\Cache.php(124): Dompdf\Helpers::dompdf_getimagesize('file://C:\\xampp...', Resource id #151)
+#3 C:\xampp\htdocs\sistemaventas\vendor\dompdf\dompdf\src\FrameDecorator\Image.php(53): Dompdf\Image\Cache::resolve_url('assets/img/prod...', 'file://', '', '', Object(Dompdf\Options))
+#4 C:\xampp\htdocs\sistemaventas\vendor\dompdf\dompdf\src\Frame\Factory.php(198): Dompdf\FrameDecorator\Image->__construct(Object(Dompdf\Frame), Object(Dompdf\Dompdf))
+#5 C:\xampp\htdocs\sistemaventas\vendor\dompdf\dompdf\src\Dompdf.php(731): Dompdf\Frame\Factory::decorate_frame(Object(Dompdf\Frame), Object(Dompdf\Dompdf), Object(Dompdf\FrameDecorator\Page))
+#6 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(96): Dompdf\Dompdf->render()
+#7 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptProduct()
+#8 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#9 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-08-16 19:25:26 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 262148096 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-08-16 19:31:38 --> foreach() argument must be of type array|object, string given
+#0 C:\xampp\htdocs\sistemaventas\app\Views\Report\rptCategory.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\sistemaventas\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistemaventas\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistemaventas\system\Common.php(1089): CodeIgniter\View\View->render('Report/rptCateg...', Array, true)
+#4 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(52): view('Report/rptCateg...', Array)
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptCategory()
+#6 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#7 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-08-16 19:33:38 --> foreach() argument must be of type array|object, string given
+#0 C:\xampp\htdocs\sistemaventas\app\Views\Report\rptCategory.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\sistemaventas\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistemaventas\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistemaventas\system\Common.php(1089): CodeIgniter\View\View->render('Report/rptCateg...', Array, true)
+#4 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(52): view('Report/rptCateg...', Array)
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptCategory()
+#6 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#7 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-08-16 19:38:32 --> Undefined property: stdClass::$price_sale
+#0 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(255): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 255)
+#1 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->downloadExcelProduct()
+#2 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-08-16 19:51:13 --> Attempt to read property "supplier" on array
+#0 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(303): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 303)
+#1 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->downloadExcelPurchase()
+#2 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-08-16 19:53:31 --> Attempt to read property "supplier" on array
+#0 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(303): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 303)
+#1 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->downloadExcelPurchase()
+#2 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-08-16 20:11:08 --> foreach() argument must be of type array|object, string given
+#0 C:\xampp\htdocs\sistemaventas\app\Views\Report\rptSupplier.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'C:\\xampp\\htdocs...', 70)
+#1 C:\xampp\htdocs\sistemaventas\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistemaventas\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistemaventas\system\Common.php(1089): CodeIgniter\View\View->render('Report/rptSuppl...', Array, true)
+#4 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(150): view('Report/rptSuppl...', Array)
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptSupplier()
+#6 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#7 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-08-16 20:12:05 --> foreach() argument must be of type array|object, string given
+#0 C:\xampp\htdocs\sistemaventas\app\Views\Report\rptSupplier.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'C:\\xampp\\htdocs...', 70)
+#1 C:\xampp\htdocs\sistemaventas\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistemaventas\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistemaventas\system\Common.php(1089): CodeIgniter\View\View->render('Report/rptSuppl...', Array, true)
+#4 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(150): view('Report/rptSuppl...', Array)
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptSupplier()
+#6 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#7 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-08-16 20:12:20 --> foreach() argument must be of type array|object, string given
+#0 C:\xampp\htdocs\sistemaventas\app\Views\Report\rptSupplier.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'C:\\xampp\\htdocs...', 70)
+#1 C:\xampp\htdocs\sistemaventas\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistemaventas\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistemaventas\system\Common.php(1089): CodeIgniter\View\View->render('Report/rptSuppl...', Array, true)
+#4 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(150): view('Report/rptSuppl...', Array)
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptSupplier()
+#6 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#7 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-08-16 20:17:57 --> Undefined variable $suppliers
+#0 C:\xampp\htdocs\sistemaventas\app\Views\Report\rptSupplier.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 70)
+#1 C:\xampp\htdocs\sistemaventas\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistemaventas\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistemaventas\system\Common.php(1089): CodeIgniter\View\View->render('Report/rptSuppl...', Array, true)
+#4 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(151): view('Report/rptSuppl...', Array)
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptSupplier()
+#6 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#7 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-08-16 20:18:17 --> Undefined array key "supplier"
+#0 C:\xampp\htdocs\sistemaventas\app\Views\Report\rptSupplier.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\sistemaventas\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistemaventas\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistemaventas\system\Common.php(1089): CodeIgniter\View\View->render('Report/rptSuppl...', Array, true)
+#4 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(151): view('Report/rptSuppl...', Array)
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptSupplier()
+#6 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#7 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-08-16 20:22:05 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+#0 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptSupplier()
+#1 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#2 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2023-08-16 20:22:40 --> Call to a member function getResultArray() on array
+#0 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptSupplier()
+#1 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#2 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2023-08-16 20:27:41 --> Undefined property: mysqli::$name
+#0 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(381): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 381)
+#1 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->downloadExcelSupplier()
+#2 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-08-16 22:39:42 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\sistemaventas\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\sistemaventas\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(172): CodeIgniter\Model->__call('dataClient', Array)
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptClient()
+#4 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-08-16 22:40:23 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\sistemaventas\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\sistemaventas\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(172): CodeIgniter\Model->__call('dataClient', Array)
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptClient()
+#4 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-08-16 23:25:59 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\sistemaventas\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\sistemaventas\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(202): CodeIgniter\Model->__call('readSales', Array)
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptSale()
+#4 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-08-16 23:33:09 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\sistemaventas\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\sistemaventas\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(558): CodeIgniter\Model->__call('readPurchases', Array)
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->downloadExcelSale()
+#4 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-08-16 23:41:26 --> Undefined variable $suppliers
+#0 C:\xampp\htdocs\sistemaventas\app\Views\Report\rptUser.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 70)
+#1 C:\xampp\htdocs\sistemaventas\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistemaventas\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistemaventas\system\Common.php(1089): CodeIgniter\View\View->render('Report/rptUser', Array, true)
+#4 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(246): view('Report/rptUser', Array)
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptUser()
+#6 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#7 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-08-16 23:43:55 --> foreach() argument must be of type array|object, string given
+#0 C:\xampp\htdocs\sistemaventas\app\Views\Report\rptUser.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\sistemaventas\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistemaventas\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistemaventas\system\Common.php(1089): CodeIgniter\View\View->render('Report/rptUser', Array, true)
+#4 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(246): view('Report/rptUser', Array)
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptUser()
+#6 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#7 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-08-16 23:44:42 --> foreach() argument must be of type array|object, string given
+#0 C:\xampp\htdocs\sistemaventas\app\Views\Report\rptUser.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\sistemaventas\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistemaventas\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistemaventas\system\Common.php(1089): CodeIgniter\View\View->render('Report/rptUser', Array, true)
+#4 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(246): view('Report/rptUser', Array)
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptUser()
+#6 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#7 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2023-08-16 23:48:10 --> Table 'salessystem.user' doesn't exist
+CRITICAL - 2023-08-16 23:48:10 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptUser()
+#1 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#2 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2023-08-16 23:49:05 --> Attempt to read property "full_name" on array
+#0 C:\xampp\htdocs\sistemaventas\app\Views\Report\rptUser.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 71)
+#1 C:\xampp\htdocs\sistemaventas\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistemaventas\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistemaventas\system\Common.php(1089): CodeIgniter\View\View->render('Report/rptUser', Array, true)
+#4 C:\xampp\htdocs\sistemaventas\app\Controllers\ReportAll.php(247): view('Report/rptUser', Array)
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\ReportAll->rptUser()
+#6 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportAll))
+#7 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}

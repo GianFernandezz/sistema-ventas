@@ -23,6 +23,31 @@ class CategoryModel extends Model {
 
 		return $results;
     }
+
+	public function createCategory($data){
+		$this->db
+		->table('category')
+		->set($data)
+		->insert();
+	}
+	
+	public function updateCategory($id, $data){
+		$this->db
+		->table('category')
+		->set($data)
+		->where('id', $id)
+		->update();
+	}
+
+	public function deleteCategory($id){
+		$this->db
+		->table('category')
+		->where('id', $id)
+		->delete();
+
+		return $this->db->affectedRows();
+	}
+
 	// ! -> EST ES PARA REPORTE PDF
 
 	public function dataCategory(){
@@ -40,8 +65,10 @@ class CategoryModel extends Model {
 
         return $result->getResult();
     }
-	
+	// TODO -> ESTO ES PARA REPORTE EXCEL | END
 
+
+	// TODO -> PARA LA CARGA MASIVA EXCEL 
 	public function selectRow($id)
     {
         $builder = $this->db->table("category");
@@ -52,36 +79,12 @@ class CategoryModel extends Model {
 
         return $result->getRow();
     }
-	// TODO -> ESTO ES PARA REPORTE EXCEL | END |
-
-    public function createCategory($data){
-		$this->db
-		->table('category')
-		->set($data)
-		->insert();
-	}
-	// TODO -> ESTO ES PARA REPORTE EXCEL |
+	
 	public function updateCategoryExcel($id, $data){
 		$builder = $this->db->table("category");
         $query =  $builder->where("id", $id);
         return  $query->update($data);
 	}
-	// TODO -> ESTO ES PARA REPORTE EXCEL | END |
-	public function updateCategory($id, $data){
-		$this->db
-		->table('category')
-		->set($data)
-		->where('id', $id)
-		->update();
-	}
-
-	public function deleteCategory($id){
-		$this->db
-		->table('category')
-		->where('id', $id)
-		->delete();
-
-		return $this->db->affectedRows();
-	}
+	// TODO -> PARA LA CARGA MASIVA EXCEL | END
 
 }

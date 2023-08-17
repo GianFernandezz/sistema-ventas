@@ -48,4 +48,23 @@ class ClientModel extends Model {
 		return $this->db->affectedRows();
 	}
 
+	// ! -> EST ES PARA REPORTE PDF
+
+	public function dataClient(){
+		$sqlClient = $this->db->query("SELECT * FROM client");
+       	return $sqlClient;
+	}
+	// ! -> EST ES PARA REPORTE PDF | END
+	
+	// TODO -> ESTO ES PARA REPORTE EXCEL
+	public function selectClient()
+    {
+        $builder = $this->db->table("client");
+        $builder->select("*");
+        $result = $builder->get();
+
+        return $result->getResult();
+    }
+	// TODO -> ESTO ES PARA REPORTE EXCEL | END
+
 }

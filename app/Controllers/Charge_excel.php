@@ -65,20 +65,10 @@ class Charge_excel extends Controller
                     for ($i = 1; $i < count($sheetData); $i++) {
                         $name = $sheetData[$i][0];
                         $description = $sheetData[$i][1];
-                        // $email = $sheetData[$i][2];
-                        // $address = $sheetData[$i][3];
-                        // $postal = $sheetData[$i][4];
-                        // $postal = $sheetData[$i][5];
-                        // $country = $sheetData[$i][6];
                         $id = $sheetData[$i][2];
                         $data = [
                             'name' => $name,
                             'description' => $description,
-                            // 'email' => $email,
-                            // 'address' => $address,
-                            // 'postalZip' => $postal,
-                            // 'region' => $postal,
-                            // 'country' => $country,
                         ];
                         $fetchSingleData = $model->selectRow($id);
 
@@ -89,13 +79,9 @@ class Charge_excel extends Controller
 							// $response = ['type' => "success", 'message' => "Los datos se guardaron correctamente!"];
 							// echo json_encode($response);
                         }
-                    }
-					
+                    }				
                     return redirect()->to(site_url("/carga_excel"));
-					
-					
-                } else {
-					
+                } else {					
                     return view("charge_excel");
                 }
             } else {
@@ -159,11 +145,8 @@ class Charge_excel extends Controller
                         }
                     }
 					
-                    return redirect()->to(site_url("/carga_excel"));
-					
-					
-                } else {
-					
+                    return redirect()->to(site_url("/carga_excel"));					
+                } else {					
                     return view("charge_excel");
                 }
             } else {
@@ -173,5 +156,4 @@ class Charge_excel extends Controller
             return view("charge_excel");
         }
     }
-	
 }

@@ -59,6 +59,16 @@
 							<div>
 								<h5 class="mb-0">Todas los proveedores</h5>
 							</div>
+							<!-- //? BOTONES PARA REPORTES (Excel | PDF) -->
+							<div class="ms-auto my-auto mt-lg-0 mt-4">								
+								<a href="<?= base_url('reportall/downloadExcelSupplier'); ?>" class="btn bg-gradient-default me-4" data-toggle="tooltip" data-placement="top" title="Reporte Excel">
+									<img src="<?= base_url('assets/img/excel.png'); ?>" alt="Download-Excel">
+								</a>	
+								<a href="<?= base_url('reportall/rptSupplier'); ?>" class="btn bg-gradient-default" data-toggle="tooltip" data-placement="top" title="Reporte PDF" target="_blank">
+									<img src="<?= base_url('assets/img/pdf.png'); ?>" alt="Download-PDF">
+								</a>							
+							</div>
+							<!-- //? END -- BOTONES PARA REPORTES (Excel | PDF) -->
 							<div class="ms-auto my-auto mt-lg-0 mt-4">
 								<div class="ms-auto my-auto">
 									<button class="btn bg-gradient-primary btn-sm mb-0" data-bs-toggle="modal" data-bs-target="#modalAdd" @click="resetValues"><i class="fa-solid fa-plus"></i> Nuevo</button>

@@ -59,7 +59,7 @@
 							</div>
 							<!-- //? BOTONES PARA REPORTES (Excel | PDF) -->
 							<div class="ms-auto my-auto mt-lg-0 mt-4">								
-								<a href="<?= base_url('reportall/downloadProduct'); ?>" class="btn bg-gradient-default me-4" data-toggle="tooltip" data-placement="top" title="Reporte Excel">
+								<a href="<?= base_url('reportall/downloadExcelProduct'); ?>" class="btn bg-gradient-default me-4" data-toggle="tooltip" data-placement="top" title="Reporte Excel">
 									<img src="<?= base_url('assets/img/excel.png'); ?>" alt="Download-Excel">
 								</a>	
 								<a href="<?= base_url('reportall/rptProduct'); ?>" class="btn bg-gradient-default" data-toggle="tooltip" data-placement="top" title="Reporte PDF" target="_blank">
