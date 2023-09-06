@@ -59,10 +59,10 @@
 							</div>
 							<!-- //? BOTONES PARA REPORTES (Excel | PDF) -->
 							<div class="ms-auto my-auto mt-lg-0 mt-4">								
-								<a href="<?= base_url('reportall/downloadExcelPurchase'); ?>" class="btn bg-gradient-default me-4" data-toggle="tooltip" data-placement="top" title="Reporte Excel">
+								<a href="<?= base_url('reports/reportall/downloadExcelPurchase'); ?>" class="btn bg-gradient-default me-4" data-toggle="tooltip" data-placement="top" title="Reporte Excel">
 									<img src="<?= base_url('assets/img/excel.png'); ?>" alt="Download-Excel">
 								</a>	
-								<a href="<?= base_url('reportall/rptPurchase'); ?>" class="btn bg-gradient-default" data-toggle="tooltip" data-placement="top" title="Reporte PDF" target="_blank">
+								<a href="<?= base_url('reports/reportall/rptPurchase'); ?>" class="btn bg-gradient-default" data-toggle="tooltip" data-placement="top" title="Reporte PDF" target="_blank">
 									<img src="<?= base_url('assets/img/pdf.png'); ?>" alt="Download-PDF">
 								</a>							
 							</div>
@@ -96,7 +96,7 @@
 
 										<td>
 											<div class="ms-auto text-lg d-flex px-2">
-												<div><a class="btn btn-link px-2 mb-0 bg-gradient-warning btn-sm" rel="tooltip" title="Ver detalle" href="<?= base_url('detalle-compra/'.$purchase->id);?>"><i class='bx bxs-file-find mt-1' style="font-size: 24px;"></i></a></div>
+												<div><a class="btn btn-link px-2 mb-0 bg-gradient-warning btn-sm" data-toggle="tooltip" data-placement="top" title="Ver detalle" href="<?= base_url('detalle-compra/'.$purchase->id);?>"><i class='bx bxs-file-find mt-1' style="font-size: 24px;"></i></a></div>
 											</div>
 										</td>
 

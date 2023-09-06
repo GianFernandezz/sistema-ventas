@@ -5,9 +5,9 @@
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
 					<li class="breadcrumb-item text-sm"><a class="opacity-5 text-white">Paginas</a></li>
-					<li class="breadcrumb-item text-sm text-white active" aria-current="page">Venta</li>
+					<li class="breadcrumb-item text-sm text-white active" aria-current="page">Compra</li>
 				</ol>
-				<h6 class="font-weight-bolder text-white mb-0">Venta</h6>
+				<h6 class="font-weight-bolder text-white mb-0">Compra (Ingresos)</h6>
 			</nav>
 			<div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4">
 				<div class="ms-md-auto pe-md-3 d-flex align-items-center">
@@ -52,67 +52,65 @@
 		<div class="row document-detail justify-content-md-center">
 			<div class="col-lg-10 col-md-12">
 				<div class="text-end nprt">
-					<button class="btn bg-gradient-dark mb-2" onclick="window.history.back()">Regresar</button>
+                <a href="<?= base_url('reporte-compras');?>" class="btn bg-gradient-dark mb-2">Regresar</a>
 					<a onclick={window.print()} class="btn bg-gradient-success mb-2"><i class="fa-solid fa-print"></i> Imprimir</a>
+					<!-- Aqui el boton de PDF y el REGRESAR (cancelar) -->
 				</div>
 
 				<div class="card mb-5 mt-2">
 					<div class="card-header pb-0">
-						<div class="d-flex">
+						<div class="d-md-flex">
 							<div class="header">
-								<h3 class="mb-1">Sitema ventas CI2</h3>
-								<p><strong>Direccion: </strong> Av. sistema ventas 102</p>
-								<p><strong>Teléfono: </strong> 969798 </p>
+								<h3 class="mb-2">Minimarket</h3>
+								<p><strong>Direccion</strong> Av. sistema ventas 102</p>
+								<p><strong>Teléfono</strong> 969798 </p>
 							</div>
 							<div class="ms-auto my-auto mt-lg-0 mt-2">
-								<img height="64" src="<?= base_url('assets/img/logo-ct-dark.svg');?>">
+								<img height="64" src="<?= base_url('assets/img/logo-minimarket.png');?>">
 							</div>
 						</div>
 					</div>
-					<div class="card-body pt-3">
+					<div class="card-body mt-2">
 						<div class="row">
 							<div class="col-md-6">
-								<p><strong>Cliente:</strong> <?= $sale->client;?></p>
-								<p><strong><?= $sale->type_document;?>:</strong> <?= $sale->num_document;?></p>
-								<p><strong>Email:</strong> <?= $sale->email;?></p>
-								<p><strong>Teléfono/Celular:</strong> <?= $sale->phone_number;?></p>
+								<p><strong>Proveedor:</strong> <?= $purchase->supplier;?></p>
+								<p><strong>RUC:</strong> <?= $purchase->ruc;?></p>
+								<p><strong>Email:</strong> <?= $purchase->email;?></p>
+								<p><strong>Teléfono/Celular:</strong> <?= $purchase->phone_number;?></p>
 							</div>
 							<div class="col-md-6 text-end">
-								<p><strong><?= $sale->voucher;?></strong></p>
-								<p><strong>Fecha:</strong> <?= date("Y-m-d", strtotime($sale->date));?></p>
+								<p><strong><?= $purchase->voucher;?></strong></p>
+								<p><strong>Fecha:</strong> <?= date("Y-m-d", strtotime($purchase->date));?></p>
 							</div>
 							<div class="col-md-12">
-								<div class="table-responsive">
-									<table class="table align-items-center mt-5">
-										<thead>
-											<tr>
-												<th class="ps-2">Cantidad</th>
-												<th class="ps-2">Producto</th>
-												<th class="ps-2">Precio</th>
-												<th class="ps-2">Importe</th>
-											</tr>
-										</thead>
-										<tbody>
-											<?php foreach($saledetails as $detail):?>
-											<tr>
-												<td width="10%"><span><?= $detail->cant;?></span></td>
-												<td><span><?= $detail->product;?></span></td>
-												<td width="10%"><span><?= $detail->pricesale;?></span></td>
-												<td width="10%"><span><?= $detail->amount;?></span></td>
-											</tr>
-											<?php endforeach;?>
-										</tbody>
-									</table>
-								</div>
+								<table class="table align-items-center mt-5">
+									<thead>
+										<tr>
+											<th class="ps-2">Cantidad</th>
+											<th class="ps-2">Producto</th>
+											<th class="ps-2">Precio</th>
+											<th class="ps-2">Importe</th>
+										</tr>
+									</thead>
+									<tbody>
+										<?php foreach($purchasedetails as $detail):?>
+										<tr>
+											<td width="10%"><span><?= $detail->cant;?></span></td>
+											<td><span><?= $detail->product;?></span></td>
+											<td width="10%"><span><?= $detail->pricepurchase;?></span></td>
+											<td width="10%"><span><?= $detail->amount;?></span></td>
+										</tr>
+										<?php endforeach;?>
+									</tbody>
+								</table>
 							</div>
 							<div class="col-md-9"></div>
 							<div class="col-md-3 footer">
-								<p><strong>Subtotal:</strong> <?= $sale->subtotal;?></p>
-								<p><strong>Descuento:</strong> <?= $sale->igv;?></p>
-								<p><strong>IGV:</strong> <?= $sale->igv;?></p>
+								<p><strong>Subtotal:</strong> <?= $purchase->subtotal;?></p>
+								<p><strong>IGV:</strong> <?= $purchase->igv;?></p>
 								<div class="input-group mt-3 mb-2 pricing">
 									<div class="btn btn-outline-secondary mb-0">Total</div>
-									<p type="text" class="form-control" style="color: #344767 !important;">S/. <?= $sale->total;?></p>
+									<p type="text" class="form-control" style="color: #344767 !important;">S/. <?= $purchase->total;?></p>	
 								</div>
 							</div>
 						</div>

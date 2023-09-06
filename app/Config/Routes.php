@@ -40,7 +40,21 @@ $routes->add('categoria', 'Category::index', ['filter' => 'auth:web']);
 $routes->add('cliente', 'Client::index', ['filter' => 'auth:web']);
 $routes->add('usuario', 'User::index', ['filter' => 'auth:web']);
 $routes->add('proveedor', 'Supplier::index', ['filter' => 'auth:web']);
+// Modificar la URL de carga excel
 $routes->add('carga_excel', 'Charge_excel::index', ['filter' => 'auth:web']);
+// REPORT SALE DATE
+$routes->add('reporte-ventas', 'Reports\ReportDateSale::saleFilterDate', ['filter' => 'auth:web']);
+$routes->add('reporte-ventas/filter', 'Reports\ReportDateSale::filter', ['filter' => 'auth:web']);
+$routes->add('reporte-ventas/detail/(:any)', 'Reports\ReportDateSale::detail/$1', ['filter' => 'auth:web']);
+$routes->add('export-excel-ventas/(:any)/(:any)', 'Reports\ReportDateSale::exportExcelSale/$1/$2', ['filter' => 'auth:web']);
+$routes->add('export-pdf-ventas/(:any)/(:any)', 'Reports\ReportDateSale::exportPdfSale/$1/$2', ['filter' => 'auth:web']);
+
+// REPORT PURCHASE DATE
+$routes->add('reporte-compras', 'Reports\ReportDatePurchase::purchaseFilterDate', ['filter' => 'auth:web']);
+$routes->add('reporte-compras/filter', 'Reports\ReportDatePurchase::filter', ['filter' => 'auth:web']);
+$routes->add('reporte-compras/detail/(:any)', 'Reports\ReportDatePurchase::detail/$1', ['filter' => 'auth:web']);
+$routes->add('export-excel-compras/(:any)/(:any)', 'Reports\ReportDatePurchase::exportExcelPurchase/$1/$2', ['filter' => 'auth:web']);
+$routes->add('export-pdf-compras/(:any)/(:any)', 'Reports\ReportDatePurchase::exportPdfPurchase/$1/$2', ['filter' => 'auth:web']);
 
 $routes->add('nuevo-producto', 'Product\Add::index', ['filter' => 'auth:web']);
 $routes->add('producto', 'Product\Main::index', ['filter' => 'auth:web']);

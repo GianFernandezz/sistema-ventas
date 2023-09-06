@@ -63,4 +63,20 @@ class PurchaseModel extends Model {
 		->where('id', $id)
 		->update();
 	}
+	// ? -> Reporte para Filtrar por fechas PDF and EXCEL
+	public function getPurchases($fechaInicio, $fechaFin){
+		$results = $this->db
+		->table('purchase p')
+		->select('p.id, p.total, p.date, s.name as supplier, v.name as voucher')
+		->join('supplier s','s.id=p.supplier_id')
+		->join('voucher v','v.id=p.voucher_id')
+		->where('p.date >=',$fechaInicio)
+		->where('p.date <=',$fechaFin)
+		->orderBy('p.id')
+		->get()
+		->getResultObject();
+
+		return $results;
+    }
+	// ? -> Reporte para Filtrar por fechas PDF and EXCEL | END
 }

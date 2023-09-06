@@ -63,4 +63,20 @@ class SaleModel extends Model {
 		->where('id', $id)
 		->update();
 	}
+	// ? -> Reporte para Filtrar por fechas PDF and EXCEL
+	public function getSales($fechaInicio, $fechaFin){
+		$results = $this->db
+		->table('sale s')
+		->select('s.id, s.subtotal, s.total, s.date, c.name as client, v.name as voucher')
+		->join('client c','c.id=s.client_id')
+		->join('voucher v','v.id=s.voucher_id')
+		->where('s.date >=',$fechaInicio)
+		->where('s.date <=',$fechaFin)
+		->orderBy('s.id')
+		->get()
+		->getResultObject();
+
+		return $results;
+    }
+	// ? -> Reporte para Filtrar por fechas PDF and EXCEL | END
 }

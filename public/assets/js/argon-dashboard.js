@@ -5,6 +5,7 @@ $(function () {
 })
 
 
+
 //Filtrar N° de lista en las tablas
 if (document.getElementById('data-list')) {
 	new simpleDatatables.DataTable("#data-list", {

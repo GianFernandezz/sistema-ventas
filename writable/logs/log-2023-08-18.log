@@ -1,0 +1,130 @@
+ERROR - 2023-08-18 10:47:01 --> Error connecting to the database: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+CRITICAL - 2023-08-18 10:47:01 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+#0 C:\xampp\htdocs\sistemaventas\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\sistemaventas\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\sistemaventas\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\sistemaventas\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\xampp\htdocs\sistemaventas\app\ThirdParty\codeigniter4-authentication\src\Traits\UserProviderTrait.php(60): CodeIgniter\BaseModel->first()
+#5 C:\xampp\htdocs\sistemaventas\app\ThirdParty\codeigniter4-authentication\src\Adapters\SessionAdapter.php(101): App\Models\UserModel->findByCredentials(Array)
+#6 C:\xampp\htdocs\sistemaventas\app\ThirdParty\codeigniter4-authentication\src\AuthManager.php(339): Fluent\Auth\Adapters\SessionAdapter->attempt(Array, false)
+#7 C:\xampp\htdocs\sistemaventas\app\ThirdParty\codeigniter4-authentication\src\Facades\Auth.php(58): Fluent\Auth\AuthManager->__call('attempt', Array)
+#8 C:\xampp\htdocs\sistemaventas\app\Controllers\Auth\AuthenticatedSessionController.php(73): Fluent\Auth\Facades\Auth::__callStatic('attempt', Array)
+#9 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Auth\AuthenticatedSessionController->create()
+#10 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\AuthenticatedSessionController))
+#11 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-08-18 11:15:26 --> Archivo inválido: Report/reportDate.php
+#0 C:\xampp\htdocs\sistemaventas\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Report/reportDa...')
+#1 C:\xampp\htdocs\sistemaventas\system\Common.php(1089): CodeIgniter\View\View->render('Report/reportDa...', Array, true)
+#2 C:\xampp\htdocs\sistemaventas\app\Controllers\Reports\ReportDate.php(32): view('Report/reportDa...')
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Reports\ReportDate->index()
+#4 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\ReportDate))
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-08-18 11:16:20 --> Archivo inválido: Report/reportDate.php
+#0 C:\xampp\htdocs\sistemaventas\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Report/reportDa...')
+#1 C:\xampp\htdocs\sistemaventas\system\Common.php(1089): CodeIgniter\View\View->render('Report/reportDa...', Array, true)
+#2 C:\xampp\htdocs\sistemaventas\app\Controllers\Reports\ReportDate.php(32): view('Report/reportDa...')
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Reports\ReportDate->index()
+#4 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\ReportDate))
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-08-18 11:18:34 --> Archivo inválido: Report/reportDate.php
+#0 C:\xampp\htdocs\sistemaventas\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Report/reportDa...')
+#1 C:\xampp\htdocs\sistemaventas\system\Common.php(1089): CodeIgniter\View\View->render('Report/reportDa...', Array, true)
+#2 C:\xampp\htdocs\sistemaventas\app\Controllers\Reports\ReportDate.php(32): view('Report/reportDa...')
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Reports\ReportDate->index()
+#4 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\ReportDate))
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-08-18 11:18:46 --> Archivo inválido: Report/reportDate.php
+#0 C:\xampp\htdocs\sistemaventas\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Report/reportDa...')
+#1 C:\xampp\htdocs\sistemaventas\system\Common.php(1089): CodeIgniter\View\View->render('Report/reportDa...', Array, true)
+#2 C:\xampp\htdocs\sistemaventas\app\Controllers\Reports\ReportDate.php(32): view('Report/reportDa...')
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Reports\ReportDate->index()
+#4 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\ReportDate))
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-08-18 11:19:18 --> Archivo inválido: Report/reportDate.php
+#0 C:\xampp\htdocs\sistemaventas\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Report/reportDa...')
+#1 C:\xampp\htdocs\sistemaventas\system\Common.php(1089): CodeIgniter\View\View->render('Report/reportDa...', Array, true)
+#2 C:\xampp\htdocs\sistemaventas\app\Controllers\Reports\ReportDate.php(32): view('Report/reportDa...')
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Reports\ReportDate->index()
+#4 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\ReportDate))
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-08-18 11:20:19 --> Archivo inválido: Report/reportDate.php
+#0 C:\xampp\htdocs\sistemaventas\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Report/reportDa...')
+#1 C:\xampp\htdocs\sistemaventas\system\Common.php(1089): CodeIgniter\View\View->render('Report/reportDa...', Array, true)
+#2 C:\xampp\htdocs\sistemaventas\app\Controllers\Reports\ReportDate.php(32): view('Report/reportDa...')
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Reports\ReportDate->index()
+#4 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\ReportDate))
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-08-18 11:21:51 --> Archivo inválido: Report/reportDate.php
+#0 C:\xampp\htdocs\sistemaventas\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Report/reportDa...')
+#1 C:\xampp\htdocs\sistemaventas\system\Common.php(1089): CodeIgniter\View\View->render('Report/reportDa...', Array, true)
+#2 C:\xampp\htdocs\sistemaventas\app\Controllers\Reports\ReportDate.php(32): view('Report/reportDa...')
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Reports\ReportDate->index()
+#4 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\ReportDate))
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-08-18 11:27:00 --> Archivo inválido: Report/reportdate.php
+#0 C:\xampp\htdocs\sistemaventas\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Report/reportda...')
+#1 C:\xampp\htdocs\sistemaventas\system\Common.php(1089): CodeIgniter\View\View->render('Report/reportda...', Array, true)
+#2 C:\xampp\htdocs\sistemaventas\app\Controllers\Reports\ReportDate.php(32): view('Report/reportda...')
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Reports\ReportDate->index()
+#4 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\ReportDate))
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-08-18 11:27:23 --> Archivo inválido: Report\reportdate.php
+#0 C:\xampp\htdocs\sistemaventas\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Report\\reportda...')
+#1 C:\xampp\htdocs\sistemaventas\system\Common.php(1089): CodeIgniter\View\View->render('Report\\reportda...', Array, true)
+#2 C:\xampp\htdocs\sistemaventas\app\Controllers\Reports\ReportDate.php(32): view('Report\\reportda...')
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Reports\ReportDate->index()
+#4 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\ReportDate))
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-08-18 11:27:40 --> Archivo inválido: report\reportdate.php
+#0 C:\xampp\htdocs\sistemaventas\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('report\\reportda...')
+#1 C:\xampp\htdocs\sistemaventas\system\Common.php(1089): CodeIgniter\View\View->render('report\\reportda...', Array, true)
+#2 C:\xampp\htdocs\sistemaventas\app\Controllers\Reports\ReportDate.php(32): view('report\\reportda...')
+#3 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Reports\ReportDate->index()
+#4 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\ReportDate))
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-08-18 11:35:01 --> Undefined variable $purchases
+#0 C:\xampp\htdocs\sistemaventas\app\Views\Report\rptDateSale.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 90)
+#1 C:\xampp\htdocs\sistemaventas\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistemaventas\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistemaventas\system\Common.php(1089): CodeIgniter\View\View->render('Report\\rptDateS...', Array, true)
+#4 C:\xampp\htdocs\sistemaventas\app\Controllers\Reports\ReportDate.php(32): view('Report\\rptDateS...')
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Reports\ReportDate->index()
+#6 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\ReportDate))
+#7 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}

@@ -1,0 +1,73 @@
+CRITICAL - 2023-08-19 11:42:38 --> Undefined variable $sales
+#0 C:\xampp\htdocs\sistemaventas\app\Views\Report\rptDateSale.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 86)
+#1 C:\xampp\htdocs\sistemaventas\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistemaventas\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistemaventas\system\Common.php(1089): CodeIgniter\View\View->render('Report\\rptDateS...', Array, true)
+#4 C:\xampp\htdocs\sistemaventas\app\Controllers\Reports\ReportDate.php(31): view('Report\\rptDateS...')
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Reports\ReportDate->index()
+#6 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\ReportDate))
+#7 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-08-19 12:22:57 --> Call to undefined function number_to_currency()
+#0 C:\xampp\htdocs\sistemaventas\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\sistemaventas\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\sistemaventas\system\Common.php(1089): CodeIgniter\View\View->render('Report\\rptDateS...', Array, true)
+#3 C:\xampp\htdocs\sistemaventas\app\Controllers\Reports\ReportDate.php(33): view('Report\\rptDateS...', Array)
+#4 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Reports\ReportDate->index()
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\ReportDate))
+#6 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-08-19 12:50:54 --> Too few arguments to function App\Controllers\Reports\ReportDateSale::SaleFilterDate(), 0 passed in C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php on line 825 and exactly 2 expected
+#0 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Reports\ReportDateSale->SaleFilterDate()
+#1 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\ReportDateSale))
+#2 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2023-08-19 12:54:16 --> Too few arguments to function App\Controllers\Reports\ReportDateSale::index(), 0 passed in C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php on line 825 and exactly 2 expected
+#0 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Reports\ReportDateSale->index()
+#1 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\ReportDateSale))
+#2 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2023-08-19 12:54:33 --> Undefined variable $sales
+#0 C:\xampp\htdocs\sistemaventas\app\Views\Report\rptDateSale.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 87)
+#1 C:\xampp\htdocs\sistemaventas\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistemaventas\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistemaventas\system\Common.php(1089): CodeIgniter\View\View->render('Report\\rptDateS...', Array, true)
+#4 C:\xampp\htdocs\sistemaventas\app\Controllers\Reports\ReportDateSale.php(31): view('Report\\rptDateS...')
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Reports\ReportDateSale->index()
+#6 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\ReportDateSale))
+#7 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-08-19 12:55:18 --> Undefined variable $sales
+#0 C:\xampp\htdocs\sistemaventas\app\Views\Report\rptDateSale.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 87)
+#1 C:\xampp\htdocs\sistemaventas\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistemaventas\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistemaventas\system\Common.php(1089): CodeIgniter\View\View->render('Report\\rptDateS...', Array, true)
+#4 C:\xampp\htdocs\sistemaventas\app\Controllers\Reports\ReportDateSale.php(31): view('Report\\rptDateS...')
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Reports\ReportDateSale->index()
+#6 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\ReportDateSale))
+#7 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-08-19 12:56:19 --> Undefined variable $sales
+#0 C:\xampp\htdocs\sistemaventas\app\Views\Report\rptDateSale.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 87)
+#1 C:\xampp\htdocs\sistemaventas\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistemaventas\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistemaventas\system\Common.php(1089): CodeIgniter\View\View->render('Report\\rptDateS...', Array, true)
+#4 C:\xampp\htdocs\sistemaventas\app\Controllers\Reports\ReportDateSale.php(31): view('Report\\rptDateS...')
+#5 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(825): App\Controllers\Reports\ReportDateSale->index()
+#6 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\ReportDateSale))
+#7 C:\xampp\htdocs\sistemaventas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistemaventas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\sistemaventas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}

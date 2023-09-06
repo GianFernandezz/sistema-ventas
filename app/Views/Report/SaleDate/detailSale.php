@@ -52,7 +52,7 @@
 		<div class="row document-detail justify-content-md-center">
 			<div class="col-lg-10 col-md-12">
 				<div class="text-end nprt">
-					<button class="btn bg-gradient-dark mb-2" onclick="window.history.back()">Regresar</button>
+					<a href="<?= base_url('reporte-ventas');?>" class="btn bg-gradient-dark mb-2">Regresar</a>
 					<a onclick={window.print()} class="btn bg-gradient-success mb-2"><i class="fa-solid fa-print"></i> Imprimir</a>
 				</div>
 
@@ -60,12 +60,12 @@
 					<div class="card-header pb-0">
 						<div class="d-flex">
 							<div class="header">
-								<h3 class="mb-1">Sitema ventas CI2</h3>
+								<h3 class="mb-1">Minimarket V 0.1</h3>
 								<p><strong>Direccion: </strong> Av. sistema ventas 102</p>
 								<p><strong>Teléfono: </strong> 969798 </p>
 							</div>
 							<div class="ms-auto my-auto mt-lg-0 mt-2">
-								<img height="64" src="<?= base_url('assets/img/logo-ct-dark.svg');?>">
+								<img height="64" src="<?= base_url('assets/img/logo-minimarket.png');?>">
 							</div>
 						</div>
 					</div>

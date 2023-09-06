@@ -4,8 +4,9 @@
 		<div class="sidenav-scrollbar">
 			<div class="sidenav-header">
 				<a class="navbar-brand m-0" href="<?= base_url('dashboard');?>">
-					<img src="<?= base_url('assets/img/logo-ct-dark.svg');?>" class="navbar-brand-img h-100">
-					<span class="ms-1 font-weight-bold">Sistema Ventas CI2</span>
+				<!-- LOGO-CT-DARK -->
+					<img src="<?= base_url('assets/img/logo-minimarket.png');?>" class="navbar-brand-img h-100">
+					<span class="ms-1 font-weight-bold">MINIMARKET V 0.1</span>
 				</a>
 			</div>
 			<hr class="horizontal dark mt-0">
@@ -14,7 +15,7 @@
 					<li class="nav-item">
 						<a class="nav-link active" href="<?= base_url('dashboard');?>" :class="dashboardClass">
 							<div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-								<i class="ni ni-tv-2 text-info text-sm opacity-10"></i>
+								<i class="fa-solid fa-shop text-info text-sm opacity-10"></i>
 							</div>
 							<span class="nav-link-text ms-1">Dashboard</span>
 						</a>
@@ -72,6 +73,21 @@
 							<span class="badge bg-gradient-success">New</span>
 						</a>
 					</li>
+					<li class="nav-item">
+						<a data-bs-toggle="collapse" href="#report" class="nav-link" aria-expanded="false">
+							<div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
+								<i class="fa-solid fa-chart-column text-info text-sm"></i>
+							</div>
+							<span class="nav-link-text ms-2">Reportes</span>
+						</a>
+						<div class="collapse" id="report">
+							<ul class="nav ms-4">
+								<li class="nav-item"><a class="nav-link" href="<?= base_url('reporte-ventas');?>"><span class="sidenav-normal">Consulta Ventas</span></a></li>
+								<li class="nav-item"><a class="nav-link" href="<?= base_url('reporte-compras');?>"><span class="sidenav-normal">Consulta Compras</span></a></li>
+								
+							</ul>
+						</div>
+					</li>
 				</ul>
 			</div>
 			<div class="sidenav-footer mx-3 ">
@@ -79,12 +95,12 @@
 					<img class="w-50 mx-auto" src="<?= base_url('assets/img/illustrations/icon-documentation.svg');?>">
 					<div class="card-body text-center p-3 w-100 pt-0">
 						<div class="docs-info">
-							<h6 class="mb-0">Argon Dashboard</h6>
-							<p class="text-xs font-weight-bold mb-0">Bootstrap 5 Admin Template</p>
+							<h6 class="mb-0">MINIMARKET V 0.1</h6>
+							<p class="text-xs font-weight-bold mb-0">Funcionalidades del Sistema</p>
 						</div>
 					</div>
 				</div>
-				<a class="btn btn-dark btn-sm mb-0 w-100" href="https://www.creative-tim.com/product/argon-dashboard">Ver template</a>
+				<a class="btn btn-dark btn-sm mb-0 w-100" href="https://www.creative-tim.com/product/argon-dashboard">Ver Documentación</a>
 			</div>
 		</div>
 	</aside>
